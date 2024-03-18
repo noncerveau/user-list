@@ -1,0 +1,34 @@
+.user-list {
+    overflow-y: scroll;
+    width: 30%;
+    min-width: 200px;
+    max-width: 300px;
+
+    li {
+        position: relative;
+        line-height: 30px;
+        padding-left: 50px;
+
+        &.selected {
+            background-color: rgba(211, 211, 211, 0.500);
+        }
+
+        &:hover {
+            background-color: lightgray;
+            cursor: pointer;
+        }
+
+        img {
+            position: absolute;
+            display: inline-block;
+            content: '';
+            left: 25px;
+            height: 30px;
+            width: 18px;
+            background-image: url("../user-logo.svg");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+
+    }
+}
